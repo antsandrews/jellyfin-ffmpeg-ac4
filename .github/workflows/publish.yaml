@@ -4,13 +4,14 @@ on:
   release:
     types:
       - released
+      - prereleased
 
 jobs:
   build_publish_debian:
     uses: ./.github/workflows/_meta.yaml
     with:
       distro: 'debian'
-      codenames: '["bullseye", "bookworm", "trixie"]'
+      codenames: '["bookworm", "trixie"]'
       architectures: '["amd64", "arm64"]'
       release: true
     secrets:
@@ -82,7 +83,6 @@ jobs:
       max-parallel: 1
       matrix:
         arrays: [
-          {distro: 'debian', codename: 'bullseye'},
           {distro: 'debian', codename: 'bookworm'},
           {distro: 'debian', codename: 'trixie'},
           {distro: 'ubuntu', codename: 'jammy'},
