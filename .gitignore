@@ -1,0 +1,42 @@
+# Object files, dependency files, libraries, and pkg-config
+*.o
+*.d
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.lib
+*.def
+*.exp
+*.pc
+*.version
+.version
+
+# Executables
+/ffmpeg
+/ffmpeg_g
+/ffplay
+/ffplay_g
+/ffprobe
+/ffprobe_g
+
+# Generated configure & build files
+/config.asm
+/config.h
+/config_components.h
+/doc/config.texi
+/doc/examples/pc-uninstalled/
+/ffbuild/.config
+/ffbuild/config.*
+/libavutil/avconfig.h
+/libavutil/ffversion.h
+
+# Generated codec/filter/format list tables
+/libavcodec/*_list.c
+/libavdevice/*_list.c
+/libavfilter/*_list.c
+/libavformat/*_list.c
+
+# Generated OpenCL C kernel wrappers
+/libavfilter/opencl/*.c
