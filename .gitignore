@@ -40,3 +40,8 @@
 
 # Generated OpenCL C kernel wrappers
 /libavfilter/opencl/*.c
+
+
+# Local build/sysroot/test artifacts
+/install/
+/sysroot/

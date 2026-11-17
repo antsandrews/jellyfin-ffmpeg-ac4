@@ -5,7 +5,7 @@ SYSROOT="/home/anthony/jellyfin-ffmpeg-ac4/sysroot"
 export PATH="${SYSROOT}/usr/bin:${PATH}"
 export PKG_CONFIG_PATH="${SYSROOT}/usr/lib/x86_64-linux-gnu/pkgconfig:${SYSROOT}/usr/share/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
 
-cd /home/anthony/jellyfin-ffmpeg-ac4/source
+cd /home/anthony/jellyfin-ffmpeg-ac4
 
 ./configure \
   --prefix=/home/anthony/jellyfin-ffmpeg-ac4/install \
